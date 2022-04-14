@@ -1,0 +1,196 @@
+.body{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.filter{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.filter p:first-child{
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.filter select{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.filter select option{
+    padding: 0;
+}
+
+.filter_range{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter_range img:nth-child(2){
+    width: 88%;
+    height: 2px;
+}
+
+.filter_price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.card{
+    position: relative;
+    width: 22%;
+    height: 346px;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+
+.card img{
+    /*width: 100%;*/
+    /*max-height: 257px;*/
+}
+
+.product{
+
+}
+
+.product div:first-child{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 191px;
+    height: 126px;
+    background: #FFFFFF
+}
+
+.product div:first-child img{
+    width: 71px;
+    height: 11px;
+}
+
+.product div:first-child span:first-child{
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #22232B;
+    margin-bottom: 7px;
+    margin-top: 42px;
+}
+
+.product div:first-child span:nth-child(2){
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #22232B;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 32px;
+}
+
+.product div:nth-child(2){
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.product div:nth-child(2) img{
+    width: 24px;
+    height: 24px;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.product div:nth-child(2) span{
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: right;
+
+    color: #22232B;
+}
+
+.body_mobile_select{
+    display: none;
+}
+
+@media (max-width: 739px) {
+    .body{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .filter{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        margin-bottom: 44px;
+        text-align: left;
+    }
+
+    .card{
+        position: relative;
+        width: 100%;
+        height: 346px;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .card img{
+        width: 100%;
+        height: 257px;
+    }
+
+    .product div:first-child span:first-child{
+        text-align: left;
+    }
+
+    .product div:first-child span:nth-child(2){
+        text-align: left;
+    }
+
+    .body_mobile_select{
+        display: block;
+        width: 100%;
+        margin-bottom: 26px;
+    }
+
+    .body_mobile_select select{
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid grey;
+        font-size: 18px;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+}

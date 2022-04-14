@@ -1,0 +1,134 @@
+.search{
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+
+    /*justify-content: space-between;*/
+}
+
+.search div:first-child img:nth-child(2){
+    display: none;
+}
+
+.img_search{
+    margin-left: 16px;
+    /*margin-right: 65px;*/
+}
+
+.search_input{
+    width: calc(77%);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search_input input{
+    margin-left: 64px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    padding: 0;
+    padding-right: 20%;
+    padding-left: 1%;
+}
+
+.search_input div{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+}
+
+.search_input div span{
+    margin-right: 10px;
+}
+
+.search_input div img{
+    margin-right: 2px;
+}
+
+.select_item{
+    width: calc(24%);
+    margin-left: 40px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+/*.search_input input:hover{*/
+/*    border: none;*/
+/*    border-bottom: 1px solid black;*/
+/*}*/
+
+.search_mobile{
+    display: none;
+}
+
+@media (max-width: 739px) {
+    .search{
+        width: 90%;
+        margin-top: 45px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .search div:first-child img:nth-child(2){
+        display: block;
+        /*margin-left: 20px;*/
+    }
+
+    .search div:first-child img:first-child{
+        display: none;
+    }
+
+    .select_item{
+        display: none;
+    }
+
+    .search_input{
+        display: none;
+    }
+
+    .search_mobile{
+        display: flex;
+        width: 100%;
+
+        flex-wrap: wrap;
+
+        align-items: center;
+        /*justify-content: center;*/
+    }
+
+    .search_mobile img{
+        margin-left: 10px;
+    }
+
+    .search_mobile div:nth-child(2){
+        width: 83%;
+        margin-left: 20px;
+    }
+
+    .search_mobile div:nth-child(2) input{
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid black;
+        font-size: 18px;
+        padding: 5px;
+        justify-content: space-between;
+    }
+
+    .search_mobile div:nth-child(3){
+        margin-top: 6px;
+        opacity: 1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 2;
+    }
+}
